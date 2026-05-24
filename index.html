@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flame & Brioche | Gourmet Burger House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        flame: {
+                            50: '#fff7ed',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-50 text-stone-900 font-sans">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl font-display font-bold text-flame-600">FLAME & BRIOCHE</span>
+                </div>
+                
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center gap-8 font-semibold text-stone-600">
+                    <a href="#menu" class="hover:text-flame-600 transition-colors">Our Burgers</a>
+                    <a href="#experience" class="hover:text-flame-600 transition-colors">The Experience</a>
+                    <a href="#locations" class="hover:text-flame-600 transition-colors">Locations</a>
+                    <a href="#order" class="bg-flame-600 text-white px-6 py-3 rounded-xl hover:bg-flame-700 transition-all shadow-lg shadow-flame-500/20">Order Now</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-200 px-6 py-6 space-y-4">
+            <a href="#menu" class="block font-semibold text-stone-600">Our Burgers</a>
+            <a href="#experience" class="block font-semibold text-stone-600">The Experience</a>
+            <a href="#locations" class="block font-semibold text-stone-600">Locations</a>
+            <a href="#order" class="block bg-flame-600 text-white px-6 py-3 rounded-xl text-center">Order Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="relative z-10">
+                    <span class="inline-block py-1 px-4 rounded-full bg-flame-50 text-flame-700 font-semibold text-sm mb-6">NEW: THE SMOKY TRUFFLE BURGER</span>
+                    <h1 class="text-5xl md:text-7xl font-display font-bold leading-tight mb-6">
+                        The Art of the <span class="text-flame-600">Perfect Flip.</span>
+                    </h1>
+                    <p class="text-xl text-stone-600 mb-10 max-w-lg">
+                        Hand-pressed wagyu beef, artisanal brioche buns, and our secret signature sauce. This isn't just a burger; it's a masterpiece.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#menu" class="px-8 py-4 bg-flame-600 text-white rounded-2xl font-bold text-lg hover:bg-flame-700 transition-all text-center shadow-xl shadow-flame-500/30">View Full Menu</a>
+                        <a href="#" class="px-8 py-4 bg-white border-2 border-stone-200 text-stone-800 rounded-2xl font-bold text-lg hover:border-flame-600 transition-all text-center">Find a Table</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -top-20 -right-20 w-96 h-96 bg-flame-200/50 rounded-full blur-3xl"></div>
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=800&h=600&fit=crop&auto=format&q=80" alt="Gourmet Burger" class="relative rounded-3xl shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Highlights -->
+    <section id="menu" class="py-24 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold mb-4">Signature Creations</h2>
+                <p class="text-stone-600 max-w-2xl mx-auto">Crafted with locally sourced ingredients and a passion for bold flavors.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Burger 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 transition-all group">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&h=600&fit=crop&auto=format&q=80" alt="Classic Burger" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-display font-bold">The Heritage</h3>
+                            <span class="text-flame-600 font-bold text-xl">$14</span>
+                        </div>
+                        <p class="text-stone-600 mb-6">Double aged beef, sharp cheddar, heirloom tomato, and our house pickles on toasted brioche.</p>
+                        <button class="w-full py-3 border-2 border-stone-100 rounded-xl font-semibold hover:bg-stone-900 hover:text-white transition-colors">Add to Order</button>
+                    </div>
+                </div>
+
+                <!-- Burger 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 transition-all group border-2 border-flame-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute top-4 right-4 bg-flame-600 text-white px-3 py-1 rounded-lg text-sm font-bold z-10">CHEF'S PICK</div>
+                        <img src="https://images.unsplash.com/photo-1576107232684-1279f390859f?w=800&h=600&fit=crop&auto=format&q=80" alt="Spicy Burger" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-display font-bold">Inferno BBQ</h3>
+                            <span class="text-flame-600 font-bold text-xl">$16</span>
+                        </div>
+                        <p class="text-stone-600 mb-6">Smoked brisket topper, jalapeño jam, crispy onions, and chipotle aioli. For the brave.</p>
+                        <button class="w-full py-3 bg-flame-600 text-white rounded-xl font-semibold hover:bg-flame-700 transition-colors shadow-lg shadow-flame-500/20">Add to Order</button>
+                    </div>
+                </div>
+
+                <!-- Burger 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 transition-all group">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&h=600&fit=crop&auto=format&q=80" alt="Veggie Burger" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-display font-bold">The Earthly</h3>
+                            <span class="text-flame-600 font-bold text-xl">$15</span>
+                        </div>
+                        <p class="text-stone-600 mb-6">Portobello mushroom cap, truffle goat cheese, arugula, and balsamic reduction.</p>
+                        <button class="w-full py-3 border-2 border-stone-100 rounded-xl font-semibold hover:bg-stone-900 hover:text-white transition-colors">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-stone-900 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-display font-bold mb-8">What our burger <span class="text-flame-500">fanatics</span> say.</h2>
+                    <div class="space-y-8">
+                        <div class="bg-white/5 p-8 rounded-3xl border border-white/10 backdrop-blur-sm">
+                            <p class="text-xl italic mb-6 text-stone-300">"The Heritage burger is hands down the best I've ever had. That brioche bun is like a cloud of butter!"</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=800&h=600&fit=crop&auto=format&q=80" class="w-12 h-12 rounded-full object-cover" alt="Customer">
+                                <div>
+                                    <p class="font-bold">Sarah Jenkins</p>
+                                    <p class="text-stone-500 text-sm">Food Critic</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white/5 p-8 rounded-3xl border border-white/10 backdrop-blur-sm ml-8">
+                            <p class="text-xl italic mb-6 text-stone-300">"The Inferno BBQ is actually spicy! Most places play it safe, but Flame & Brioche brings the heat."</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=800&h=600&fit=crop&auto=format&q=80" class="w-12 h-12 rounded-full object-cover" alt="Customer">
+                                <div>
+                                    <p class="font-bold">Marcus Thorne</p>
+                                    <p class="text-stone-500 text-sm">Local Legend</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=800&h=600&fit=crop&auto=format&q=80" class="rounded-3xl shadow-2xl" alt="Restaurant Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-50 border-t border-stone-200 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-2">
+                    <span class="text-2xl font-display font-bold text-flame-600 mb-6 block">FLAME & BRIOCHE</span>
+                    <p class="text-stone-600 max-w-sm mb-8">Serving the neighborhood's finest gourmet burgers since 2015. We believe in quality, community, and extra napkins.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-stone-200 flex items-center justify-center hover:bg-flame-600 hover:text-white transition-all">
+                            <span class="sr-only">Instagram</span>
+                            📷
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-stone-200 flex items-center justify-center hover:bg-flame-600 hover:text-white transition-all">
+                            <span class="sr-only">Twitter</span>
+                            🐦
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4 text-stone-600">
+                        <li><a href="#menu" class="hover:text-flame-600">Our Menu</a></li>
+                        <li><a href="#" class="hover:text-flame-600">Order Online</a></li>
+                        <li><a href="#" class="hover:text-flame-600">Gift Cards</a></li>
+                        <li><a href="#" class="hover:text-flame-600">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Contact</h4>
+                    <ul class="space-y-4 text-stone-600">
+                        <li>123 Burger Lane<br>Grill District, NY 10001</li>
+                        <li>(555) 123-4567</li>
+                        <li>hello@flameandbrioche.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-stone-200 text-center text-stone-500 text-sm">
+                <p>&copy; 2026 Flame & Brioche Burger House. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking a link
+        const links = menu.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
